@@ -9,8 +9,18 @@
 #   end
 
 
-user = User.where(email: "nampnt@smartosc.com").first_or_initialize
+user = User.where(email: 'nampnt@smartosc.com').first_or_initialize
 user.update!(
-    password: "123456",
-    password_confirmation: "123456"
+    password: '123456',
+    password_confirmation: '123456'
 )
+
+100.times do |i|
+    blog_post = BlogPost.where(title: "Blog Post #{i}").first_or_initialize
+
+    blog_post.update(
+        title: "Blog Post #{i}",
+        content: "This is the body of blog post #{i}",
+        published_at: Time.zone.now - i.days
+    )
+    end
