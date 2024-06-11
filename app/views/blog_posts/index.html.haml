@@ -11,5 +11,6 @@
   -else
     .bg-green-100.text-green-900.p-2.rounded Published
 
-%div.mt-16
-  != pagy_nav(@pagy)
+-if @pagy.count > @pagy.items
+  %div.mt-16
+    != pagy_nav(@pagy)
