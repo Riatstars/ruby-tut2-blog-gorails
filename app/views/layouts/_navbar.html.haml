@@ -15,11 +15,12 @@
             .toggle.theme_mode 
               .button.component
                 .nav_link
-                  = button_to "Toggle Theme"
+                  = button_to  do
+                    .fa-solid.fa-sun.z-40
             .login_btn 
               .button.component 
                 .nav_link
-                  =link_to "Log in", new_user_session_path
+                  =link_to "Sign in", new_user_session_path
             .signup_btn
               .button.component
                 .nav_link
@@ -33,7 +34,7 @@
             .profile_btn
               .button.component
                 .nav_link
-                  =link_to "Profile"
+                  =link_to "Notification"
             .logout_btn
               .button.component
                 .nav_link
