@@ -1,11 +1,7 @@
 #this component is used for rendering tags into the view
 
 class BaseComponent < ViewComponent::Base
-  include ActionView::Helpers::TagHelper
-  include ActionView::Context
   include UiHelper
-
-  attr_reader :tag, :args
 
 
   def initialize(render: true, tag: nil, classes: nil , **args)

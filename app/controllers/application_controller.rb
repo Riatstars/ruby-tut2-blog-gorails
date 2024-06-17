@@ -1,7 +1,5 @@
 class ApplicationController < ActionController::Base
-
   include Pagy::Backend
-  
 
   private
     def set_theme 

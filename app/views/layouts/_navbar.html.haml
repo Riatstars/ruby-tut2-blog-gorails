@@ -16,8 +16,8 @@
               .button.component
                 .nav_link
                   = button_to  do
-                    = base_component(tag: :i, content: nil,  classes: "fa-solid fa-moon z-40")
-                    .fa-solid.fa-sun.z-40
+                    = ui_switch_button(text: "Toggle Theme", icon: '123')
+                    -# = base_component(tag: :i, content: nil,  classes: "fa-solid fa-moon z-40")
             .login_btn 
               .button.component 
                 .nav_link
